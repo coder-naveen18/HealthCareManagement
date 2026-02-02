@@ -5,7 +5,7 @@ from . import views
 urlpatterns = [
     # Auth
     path('auth/register/', views.register_user),
-    path('auth/login/', TokenObtainPairView.as_view()), # Still use library view for login [cite: 16]
+    path('auth/login/', TokenObtainPairView.as_view()), 
 
     # Patients
     path('patients/', views.manage_patients),
